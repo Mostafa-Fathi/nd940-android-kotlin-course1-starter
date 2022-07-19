@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">ShoeStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="sgin_up">Sgin Up</string>
+    <string name="email_example_com">email@example.com</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_message">welcome to shoe app where you can free add a shoe you want \n enjoy your exploring</string>
+    <string name="instructions">Instructions</string>
+    <string name="next">Next</string>
+    <string name="logout">Logout</string>
+    <string name="add_shoe">Add Shoe</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="enter_shoe_name">enter shoe name</string>
+    <string name="company">Company</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="enter_shoe_size">Enter Shoe Size</string>
+    <string name="description">Description</string>
+    <string name="enter_shoe_description">Enter Shoe Description</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
 </resources>
