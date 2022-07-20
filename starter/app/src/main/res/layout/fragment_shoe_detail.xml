@@ -2,11 +2,11 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.udacity.shoestore.ShoeDetailFragment">
+    tools:context="com.udacity.shoestore.view.ShoeDetailFragment">
     <data>
         <variable
             name="shoeObj"
-            type="com.udacity.shoestore.models.Shoe" />
+            type="com.udacity.shoestore.model.Shoe" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -47,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:autofillHints=""
+                android:autofillHints="@string/enter_shoe_name"
                 android:ems="10"
                 android:hint="@string/enter_shoe_name"
                 android:inputType="text"
@@ -81,7 +81,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:autofillHints=""
+                android:autofillHints="Enter Company Name"
                 android:ems="10"
                 android:text="@={shoeObj.company}"
                 android:hint="Enter Company Name"
@@ -115,7 +115,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:autofillHints=""
+                android:autofillHints="@string/enter_shoe_size"
                 android:ems="10"
                 android:text="@={``+ shoeObj.size}"
                 android:hint="@string/enter_shoe_size"
@@ -150,7 +150,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:autofillHints=""
+                android:autofillHints="@string/enter_shoe_description"
                 android:ems="10"
                 android:hint="@string/enter_shoe_description"
                 android:inputType="text"

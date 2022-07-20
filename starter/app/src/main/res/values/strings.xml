@@ -14,7 +14,7 @@
     <string name="logout">Logout</string>
     <string name="add_shoe">Add Shoe</string>
     <string name="shoe_name">Shoe Name</string>
-    <string name="enter_shoe_name">enter shoe name</string>
+    <string name="enter_shoe_name">Enter shoe name</string>
     <string name="company">Company</string>
     <string name="shoe_size">Shoe Size</string>
     <string name="enter_shoe_size">Enter Shoe Size</string>
@@ -22,4 +22,10 @@
     <string name="enter_shoe_description">Enter Shoe Description</string>
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
+    <string name="required">required</string>
+    <string name="ShoeList">Shoes List</string>
+    <string name="overlay_title">Alert</string>
+    <string name="overlay_message">"Are you sure you want to log out ? "</string>
+    <string name="overlay_postive_button">Yes</string>
+    <string name="overlay_negative_button">Cancel</string>
 </resources>
