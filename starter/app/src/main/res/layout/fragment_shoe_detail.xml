@@ -8,6 +8,7 @@
             name="shoeObj"
             type="com.udacity.shoestore.model.Shoe" />
     </data>
+    <!-- use ConstraintLayout becouse of it helps you to avoid using nested layouts and it causes better performance and easier to implement free desgins with it  -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -22,6 +23,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <!-- use linear layout desgin simple structure and make sure that label and input field in the same horizontal level in all devices -->
 
         <LinearLayout
             android:id="@+id/shoename_layout"
@@ -55,6 +57,7 @@
                 android:textColorHint="#546E7A"
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </LinearLayout>
+        <!-- use linear layout desgin simple structure and make sure that label and input field in the same horizontal level in all devices -->
 
         <LinearLayout
             android:id="@+id/CompanyLayout"
@@ -89,6 +92,7 @@
                 android:textColorHint="#546E7A"
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
         </LinearLayout>
+        <!-- use linear layout desgin simple structure and make sure that label and input field in the same horizontal level in all devices -->
 
         <LinearLayout
             android:id="@+id/sizeLayout"
@@ -123,6 +127,7 @@
                 android:textColorHint="#546E7A"
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
         </LinearLayout>
+        <!-- use linear layout desgin simple structure and make sure that label and input field in the same horizontal level in all devices -->
 
         <LinearLayout
             android:id="@+id/descriptionLayout"

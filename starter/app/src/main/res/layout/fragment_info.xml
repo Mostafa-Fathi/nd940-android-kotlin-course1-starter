@@ -5,6 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.udacity.shoestore.view.InfoFragment">
 
+    <!-- use ConstraintLayout becouse of it helps you to avoid using nested layouts and it causes better performance and easier to implement free desgins with it  -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

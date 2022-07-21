@@ -93,6 +93,11 @@ class ShoeListFragment : Fragment() {
 
     }
 
+    override fun onStop() {
+        super.onStop()
+        (activity as AppCompatActivity).toolbar.getMenu().clear();
+    }
+
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
        // inflater.inflate(R.menu.logout_menu, menu)

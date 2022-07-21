@@ -5,6 +5,7 @@
     tools:context="com.udacity.shoestore.view.ShoeListFragment"
     android:layout_height="match_parent"
     android:layout_width="match_parent">
+    <!-- use ScrollView to make sure user can be scroll if there are a lot of items in the view -->
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,6 +21,7 @@
         </LinearLayout>
 
     </ScrollView>
+    <!-- use linear layout to attach floating action button to the end of layout -->
 
     <LinearLayout
         android:layout_width="wrap_content"

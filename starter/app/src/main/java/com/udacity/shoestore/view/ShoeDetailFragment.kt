@@ -19,7 +19,7 @@ class ShoeDetailFragment : Fragment() {
     var shoeSize: String? = null
     var companyName: String? = null
     var shoeDesc: String? = null
-    private val ShoeObj: Shoe= Shoe("",0.0,"","", images)
+    private val shoeObj: Shoe= Shoe("",0.0,"","", images)
     private lateinit var binding: FragmentShoeDetailBinding
 
 
@@ -29,20 +29,14 @@ class ShoeDetailFragment : Fragment() {
         binding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_shoe_detail, container, false
         )
-        binding.shoeObj=ShoeObj;
+        binding.shoeObj=shoeObj;
 
         val model=ViewModelProvider(requireActivity()).get(MainViewModel::class.java)
 
 
         binding.saveBtn.setOnClickListener {
             if (validate()) {
-                ShoeObj.apply {
-                    name= shoeName.toString()
-                    shoeSize=shoeSize.toString()
-                    company=companyName.toString()
-                    description=shoeDesc.toString()
-                }
-                model.addShoeTOList(ShoeObj)
+                model.addShoeTOList(shoeObj)
                 it.findNavController().navigate(R.id.action_shoeDetailFragment_to_shoeListFragment)
             }
         }
@@ -53,27 +47,24 @@ class ShoeDetailFragment : Fragment() {
     }
 
     private fun validate(): Boolean {
-        shoeName = binding.ShoeNameEditText.text.toString()
-        companyName = binding.companyEditText.text.toString()
-        shoeSize = binding.sizeEditText.text.toString()
-        shoeDesc = binding.descriptionEditText.text.toString()
-        if (companyName!!.isEmpty()) {
+
+        if (shoeObj.company.isEmpty()) {
             binding.companyEditText.requestFocus()
             binding.companyEditText.error = getString(R.string.required)
             return false
         }
-        if (shoeName!!.isEmpty()) {
+        if (shoeObj.name.isEmpty()) {
             binding.ShoeNameEditText.requestFocus()
             binding.ShoeNameEditText.error = getString(R.string.required)
             return false
         }
-        if (shoeSize!!.isEmpty()) {
+        if (shoeObj.size.toString().isEmpty()) {
             binding.sizeEditText.requestFocus()
             binding.sizeEditText.error = getString(R.string.required)
             return false
         }
 
-        if (shoeDesc!!.isEmpty()) {
+        if (shoeObj.description.isEmpty()) {
             binding.descriptionEditText.requestFocus()
             binding.descriptionEditText.error = getString(R.string.required)
             return false

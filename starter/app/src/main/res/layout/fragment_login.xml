@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.udacity.shoestore.view.LoginFragment"
     >
-
+    <!-- use ConstraintLayout becouse of it helps you to avoid using nested layouts and it causes better performance and easier to implement free desgins with it  -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/loginConstraint"
         android:layout_width="match_parent"
@@ -22,6 +22,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
             tools:ignore="MissingConstraints,DuplicateSpeakableTextCheck" />
+        <!-- use linear layout desgin simple structure and make sure that label and input field in the same horizontal level in all devices -->
 
         <LinearLayout
             android:id="@+id/linearLayout2"
@@ -55,6 +56,7 @@
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck"
                 android:autofillHints="" />
         </LinearLayout>
+        <!-- use linear layout desgin simple structure and make sure that label and input field in the same horizontal level in all devices -->
 
         <LinearLayout
             android:id="@+id/email_layout"
